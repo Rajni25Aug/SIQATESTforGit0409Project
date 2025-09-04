@@ -16,6 +16,11 @@ packages:
 - name: WmJDBCAdapter
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: TPP_services_in_FCS
+  gitServerName: Kusi_VCTest
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: Rajni25Aug
+  gitBranch: main
 services:
 - serviceName: project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -84,40 +89,32 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2088
 configurationVariables:
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
   : 9.46.196.248
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : MySQL
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
-  : ""
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
   : "false"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : MYSQL_DATABASE
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
@@ -126,7 +123,15 @@ configurationVariables:
   : "3306"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : drivergroup1
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : siqatest
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
