@@ -14,6 +14,16 @@ packages:
   gitUsername: prabhakarsag
   gitBranch: main
 services:
+- serviceName: project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQATESTforGit0409Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqatestforgit0409.integrations:AlertsCRTandERT
   packages:
   - name: SIQATESTforGit0409Project
@@ -28,6 +38,16 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2088
+- serviceName: project.siqatestforgit0409.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQATESTforGit0409Project
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqatestforgit0409.integrations:deepclonetest
   packages:
   - name: SIQATESTforGit0409Project
