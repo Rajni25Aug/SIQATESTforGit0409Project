@@ -12,17 +12,18 @@
     <value name="SSL_JDBC_Test">1.0</value>
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
     <value name="TPP_services_in_FCS">1.0</value>
+    <value name="SIQA_OriginTest_OnPremAssets">1.0</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">17</value>
+  <value name="build">18</value>
   <null name="description"/>
   <value name="created_date">04-09-2025 04:01:48 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-09-04T04:31:59.588708489Z</value>
+  <value name="lastUpdated">2025-09-04T04:34:14.322014171Z</value>
   <value name="wmProjectId">fl3cf877b3a55dde88bce112</value>
   <value name="creator">Kusi Singh</value>
 </Values>

@@ -14,44 +14,77 @@ packages:
   gitUsername: prabhakarsag
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: Kusi_VCTest
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Rajni25Aug
   gitBranch: main
+- name: SIQA_OriginTest_OnPremAssets
+  gitServerName: Kusi_VCTest
+  gitUrl: https://github.com/vijetadixit
+  gitUsername: Rajni25Aug
+  gitBranch: Test2
 services:
 - serviceName: project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: SIQATESTforGit0409Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQATESTforGit0409Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DbAcc
+  packages:
+  - name: SIQATESTforGit0409Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqatestforgit0409.integrations:AlertsCRTandERT
   packages:
   - name: SIQATESTforGit0409Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -60,22 +93,30 @@ services:
   packages:
   - name: SIQATESTforGit0409Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqatestforgit0409.integrations:deepclonetest
   packages:
   - name: SIQATESTforGit0409Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -89,32 +130,40 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2088
 configurationVariables:
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : 9.46.196.248
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
-  : ""
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
   : "1"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : MySQL
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
   : "10"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : MYSQL_DATABASE
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
-  : "1000"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
@@ -123,15 +172,7 @@ configurationVariables:
   : "3306"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : drivergroup1
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
-  : ""
+  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : siqatest
-  ? artConnection.SIQATESTforGit0409Project.project.siqatestforgit0409.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
-  : "0"
